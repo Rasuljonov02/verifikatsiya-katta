@@ -24,16 +24,16 @@ const schema = yup.object().shape({
 		.string()
 		.matches(/^[A-Za-z\s]+$/)
 		.required("Brand is required"),
-	name: yup
+		iban: yup
 		.string()
 		.matches(/^[A-Za-z\s]+$/)
 		.required("Name is required"),
-	web: yup
+	card: yup
 		.string()
 		.matches(/^[\d\s]{13,19}$/, "Invalid card number")
 		.required("Card number is required"),
 
-	country: yup.string().required("Country is required"),
+
 	category: yup.string().required("Category is required"),
 });
 
@@ -44,9 +44,9 @@ form.addEventListener("submit", (e) => {
 
 	const formData = {
 		brand: brand.value,
-		name: description.value,
-		web: website.value,
-		country: country.value,
+		iban: description.value,
+		card: website.value,
+		// country: country.value,
 		category: category.value,
 		swift1: swift1.value,
 	};
@@ -60,8 +60,8 @@ form.addEventListener("submit", (e) => {
 			errordescription.innerText = "";
 			errorurl.innerText = "";
 			swift.innerText = "";
-   container1.style.display = "none";
-			container.style.display = "flex";
+   container1.style.display = "flex";
+			container.style.display = "none";
 			container2.style.display = "none";
 
 
@@ -73,7 +73,7 @@ form.addEventListener("submit", (e) => {
 			if (error.path === "name" || description.value === "" || !regexp.test(description.value)) {
 				errordescription.innerText = "IBAN is a required field";
 			}
-			if (error.path === "web" || website.value === "") {
+			if (error.path === "card" || website.value === "") {
 				errorurl.innerText = "Bank name is a required field";
 			}
 			if (error.path === "swift1" || website.value === "") {
