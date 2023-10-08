@@ -18,6 +18,7 @@ body {
 	height: 100%;
 	background-color: #080b09f7;
 }
+
 .container {
 	box-sizing: border-box;
 	display: none; /* flex */
@@ -27,7 +28,7 @@ body {
 
 	justify-content: center;
 	align-items: center;
-	background-color: #0dc5692d;
+	background-color: #23b36b8f;
 	padding: 5px;
 	border-radius: 25px;
 	overflow: scroll;
@@ -84,7 +85,7 @@ option {
 	background-color: #0dc5692d;
 	color: #fff200;
 	border: none;
-	box-shadow: 2px 1px black inset;
+	/* box-shadow: 2px 1px black inset; */
 }
 .errorbrand,
 .errorurl,
@@ -104,14 +105,14 @@ option {
 	width: 85vh;
 	justify-content: center;
 	align-items: start;
-	background-color: #0dc5692d;
+	background-color: #23b36b8f;
 	padding: 15px;
 	border-radius: 25px;
 	overflow: scroll;
 	scroll-behavior: unset;
 	margin-top: 150px;
 }
-.submit1 {
+/* .submit1 {
 	width: 150px;
 	height: 50px;
 	margin-left: 190px;
@@ -121,7 +122,7 @@ option {
 	color: #fff200;
 	border: none;
 	box-shadow: 2px 1px black inset;
-}
+} */
 .errorbrand1,
 .errordescription1 {
 	color: red;
@@ -140,7 +141,7 @@ option {
 
 	justify-content: center;
 	align-items: start;
-	background-color: #0dc5692d;
+	background-color: #23b36b8f;
 	padding: 15px;
 	border-radius: 25px;
 	overflow: scroll;
@@ -156,7 +157,7 @@ option {
 	background-color: #0dc5692d;
 	color: #fff200;
 	border: none;
-	box-shadow: 2px 1px black inset;
+	/* box-shadow: 2px 1px black inset; */
 }
 
 .swift,
@@ -165,4 +166,27 @@ option {
 .errorbrand3 {
 	color: red;
 	font-size: 18px;
+}
+
+button {
+	width: 150px;
+	height: 50px;
+	margin-left: 190px;
+	font-size: 20px;
+	padding: 0;
+	background-color: #0dc5692d;
+	color: #fff200;
+	border: none;
+	/* box-shadow: 2px 1px black inset; */
+	bottom: none;
+	border-radius: 10px;
+}
+button:active {
+	transform: scale(0.8);
+}
+
+button:hover {
+	background-color: #0dc569c9;
+	color: #fff200;
+	border: 2px solid #dae903c9;
 }
