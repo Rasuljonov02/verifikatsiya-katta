@@ -28,7 +28,7 @@ body {
 
 	justify-content: center;
 	align-items: center;
-	background-color: #23b36b8f;
+	background-color: #32c50d2d;
 	padding: 5px;
 	border-radius: 25px;
 	overflow: scroll;
@@ -105,7 +105,7 @@ option {
 	width: 85vh;
 	justify-content: center;
 	align-items: start;
-	background-color: #23b36b8f;
+	background-color: #32c50d2d;
 	padding: 15px;
 	border-radius: 25px;
 	overflow: scroll;
@@ -141,7 +141,7 @@ option {
 
 	justify-content: center;
 	align-items: start;
-	background-color: #23b36b8f;
+	background-color: #32c50d2d;
 	padding: 15px;
 	border-radius: 25px;
 	overflow: scroll;
@@ -174,7 +174,7 @@ button {
 	margin-left: 190px;
 	font-size: 20px;
 	padding: 0;
-	background-color: #0dc5692d;
+	background-color: #1cc50d2d;
 	color: #fff200;
 	border: none;
 	/* box-shadow: 2px 1px black inset; */
@@ -186,7 +186,7 @@ button:active {
 }
 
 button:hover {
-	background-color: #0dc569c9;
+	background-color: #0dc56957;
 	color: #fff200;
 	border: 2px solid #dae903c9;
 }

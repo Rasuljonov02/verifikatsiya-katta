@@ -16,15 +16,12 @@ const container2: HTMLDivElement = document.querySelector(".container2")!;
 const container1: HTMLDivElement = document.querySelector(".container1")!;
 const container: HTMLDivElement = document.querySelector(".container")!;
 
-
-
-
 const schema = yup.object().shape({
 	brand: yup
 		.string()
 		.matches(/^[A-Za-z\s]+$/)
 		.required("Brand is required"),
-		iban: yup
+	iban: yup
 		.string()
 		.matches(/^[A-Za-z\s]+$/)
 		.required("Name is required"),
@@ -32,7 +29,6 @@ const schema = yup.object().shape({
 		.string()
 		.matches(/^[\d\s]{13,19}$/, "Invalid card number")
 		.required("Card number is required"),
-
 
 	category: yup.string().required("Category is required"),
 });
@@ -60,11 +56,9 @@ form.addEventListener("submit", (e) => {
 			errordescription.innerText = "";
 			errorurl.innerText = "";
 			swift.innerText = "";
-   container1.style.display = "flex";
+			container1.style.display = "flex";
 			container.style.display = "none";
 			container2.style.display = "none";
-
-
 		})
 		.catch((error) => {
 			if (error.path === "brand" || brand.value === "" || !regexp.test(brand.value)) {
